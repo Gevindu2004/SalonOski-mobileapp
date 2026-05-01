@@ -13,6 +13,7 @@ import ResetPasswordScreen from "../screens/auth/ResetPasswordScreen";
 
 
 
+import CustomerDashboardScreen from "../screens/customer/CustomerDashboardScreen";
 import BookAppointmentScreen from "../screens/customer/BookAppointmentScreen";
 import MyAppointmentsScreen from "../screens/customer/MyAppointmentsScreen";
 import RescheduleAppointmentScreen from "../screens/customer/RescheduleAppointmentScreen";
@@ -34,22 +35,12 @@ const SIDEBAR_WIDTH = LAYOUT.sidebarWidth;
 const TOPIC_HEADER_SAFE_TOP = 22;
 const TOPIC_HEADER_MIN_HEIGHT = 84;
 const ADMIN_SECTIONS = [
-  { key: "Dashboard", label: "Dashboard", icon: "grid-outline" },
-  { key: "Services", label: "Services", icon: "cut-outline" },
-  { key: "Inventory", label: "Inventory", icon: "cube-outline" },
-  { key: "BeauticianInventory", label: "Beautician Inventory", icon: "pricetag-outline" },
-  { key: "Staff", label: "Beautician", icon: "people-outline" },
-  { key: "Users", label: "Users", icon: "people-circle-outline" },
   { key: "Appointments", label: "Appointments", icon: "calendar-outline" },
-  { key: "Feedbacks", label: "Feedbacks", icon: "chatbubbles-outline" },
-  { key: "Payments", label: "Payments", icon: "card-outline" }
+  { key: "Profile", label: "Profile", icon: "person-outline" }
 ];
 const STAFF_SECTIONS = [
   { key: "Appointments", label: "Appointments", icon: "calendar-outline" },
-  { key: "Inventory", label: "Inventory", icon: "cube-outline" },
-  { key: "Payments", label: "Payments", icon: "card-outline" },
   { key: "AppointmentHistory", label: "Appointment History", icon: "time-outline" },
-  { key: "Feedbacks", label: "Feedbacks", icon: "chatbubbles-outline" },
   { key: "Profile", label: "Profile", icon: "person-outline" }
 ];
 
@@ -107,6 +98,11 @@ function CustomerStack() {
         animation: "slide_from_right"
       }}
     >
+      <Stack.Screen
+        name="Dashboard"
+        component={CustomerDashboardScreen}
+        options={{ headerShown: false }}
+      />
       <Stack.Screen name="Appointments" component={MyAppointmentsScreen} options={{ title: "My Appointments" }} />
       <Stack.Screen
         name="RescheduleAppointment"
@@ -130,7 +126,7 @@ function AdminShell() {
   const insets = useSafeAreaInsets();
   const isWideLayout = width >= 900;
   const styles = createAdminStyles(colors, isWideLayout);
-  const [activeSection, setActiveSection] = useState("Dashboard");
+  const [activeSection, setActiveSection] = useState("Appointments");
   const [drawerVisible, setDrawerVisible] = useState(false);
   const drawerTranslateX = useRef(new Animated.Value(-SIDEBAR_WIDTH)).current;
   const drawerOpacity = useRef(new Animated.Value(0)).current;
@@ -324,9 +320,9 @@ function AdminShell() {
 
   return (
     <View style={styles.layoutRoot}>
-      {!isWideLayout && activeSection !== "Dashboard" ? (
+      {!isWideLayout && activeSection !== "Appointments" ? (
         <View style={[styles.mobileHeader, { paddingTop: Math.max(insets.top, TOPIC_HEADER_SAFE_TOP) }]}>
-          <Pressable style={styles.mobileBackButton} onPress={() => setActiveSection("Dashboard")}>
+          <Pressable style={styles.mobileBackButton} onPress={() => setActiveSection("Appointments")}>
             <Ionicons name="arrow-back" size={34} color={colors.text} />
           </Pressable>
           <Text style={styles.mobileHeaderTitle}>{activeMeta.label}</Text>
