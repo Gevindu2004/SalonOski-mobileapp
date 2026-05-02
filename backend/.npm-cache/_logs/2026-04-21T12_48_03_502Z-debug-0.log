@@ -1,0 +1,495 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\mendi\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.12.1
+2 info using node@v24.14.0
+3 silly config load:file:C:\Users\mendi\AppData\Roaming\npm\node_modules\npm\npmrc
+4 silly config load:file:D:\salon-mobile-application\backend\.npmrc
+5 silly config load:file:C:\Users\mendi\.npmrc
+6 silly config load:file:C:\Users\mendi\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:D:\salon-mobile-application\backend\.npm-cache\_logs\2026-04-21T12_48_03_502Z-
+10 verbose logfile D:\salon-mobile-application\backend\.npm-cache\_logs\2026-04-21T12_48_03_502Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+13 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+14 silly idealTree buildDeps
+15 silly fetch manifest google-auth-library@^9.15.1
+16 silly packumentCache full:https://registry.npmjs.org/google-auth-library cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/npm 553ms
+18 http fetch GET 200 https://registry.npmjs.org/google-auth-library 337ms (cache miss)
+19 silly packumentCache full:https://registry.npmjs.org/google-auth-library set size:undefined disposed:false
+20 silly placeDep ROOT google-auth-library@9.15.1 OK for: salon-management-backend@1.0.0 want: ^9.15.1
+21 silly fetch manifest gaxios@^6.1.1
+22 silly packumentCache full:https://registry.npmjs.org/gaxios cache-miss
+23 silly fetch manifest gtoken@^7.0.0
+24 silly packumentCache full:https://registry.npmjs.org/gtoken cache-miss
+25 silly fetch manifest base64-js@^1.3.0
+26 silly packumentCache full:https://registry.npmjs.org/base64-js cache-miss
+27 silly fetch manifest gcp-metadata@^6.1.0
+28 silly packumentCache full:https://registry.npmjs.org/gcp-metadata cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/base64-js 421ms (cache miss)
+30 silly packumentCache full:https://registry.npmjs.org/base64-js set size:undefined disposed:false
+31 http fetch GET 200 https://registry.npmjs.org/gaxios 428ms (cache miss)
+32 silly packumentCache full:https://registry.npmjs.org/gaxios set size:undefined disposed:false
+33 http fetch GET 200 https://registry.npmjs.org/gtoken 444ms (cache miss)
+34 silly packumentCache full:https://registry.npmjs.org/gtoken set size:undefined disposed:false
+35 http fetch GET 200 https://registry.npmjs.org/gcp-metadata 473ms (cache miss)
+36 silly packumentCache full:https://registry.npmjs.org/gcp-metadata set size:undefined disposed:false
+37 silly placeDep ROOT base64-js@1.5.1 OK for: google-auth-library@9.15.1 want: ^1.3.0
+38 silly placeDep ROOT gaxios@6.7.1 OK for: google-auth-library@9.15.1 want: ^6.1.1
+39 silly placeDep ROOT gcp-metadata@6.1.1 OK for: google-auth-library@9.15.1 want: ^6.1.0
+40 silly placeDep ROOT gtoken@7.1.0 OK for: google-auth-library@9.15.1 want: ^7.0.0
+41 silly fetch manifest uuid@^9.0.1
+42 silly packumentCache full:https://registry.npmjs.org/uuid cache-miss
+43 silly fetch manifest extend@^3.0.2
+44 silly packumentCache full:https://registry.npmjs.org/extend cache-miss
+45 silly fetch manifest is-stream@^2.0.0
+46 silly packumentCache full:https://registry.npmjs.org/is-stream cache-miss
+47 silly fetch manifest node-fetch@^2.6.9
+48 silly packumentCache full:https://registry.npmjs.org/node-fetch cache-miss
+49 silly fetch manifest https-proxy-agent@^7.0.1
+50 silly packumentCache full:https://registry.npmjs.org/https-proxy-agent cache-miss
+51 silly fetch manifest json-bigint@^1.0.0
+52 silly packumentCache full:https://registry.npmjs.org/json-bigint cache-miss
+53 silly fetch manifest google-logging-utils@^0.0.2
+54 silly packumentCache full:https://registry.npmjs.org/google-logging-utils cache-miss
+55 http fetch GET 200 https://registry.npmjs.org/uuid 101ms (cache miss)
+56 silly packumentCache full:https://registry.npmjs.org/uuid set size:undefined disposed:false
+57 http fetch GET 200 https://registry.npmjs.org/extend 351ms (cache miss)
+58 silly packumentCache full:https://registry.npmjs.org/extend set size:undefined disposed:false
+59 http fetch GET 200 https://registry.npmjs.org/is-stream 354ms (cache miss)
+60 silly packumentCache full:https://registry.npmjs.org/is-stream set size:undefined disposed:false
+61 http fetch GET 200 https://registry.npmjs.org/json-bigint 462ms (cache miss)
+62 silly packumentCache full:https://registry.npmjs.org/json-bigint set size:undefined disposed:false
+63 http fetch GET 200 https://registry.npmjs.org/https-proxy-agent 466ms (cache miss)
+64 silly packumentCache full:https://registry.npmjs.org/https-proxy-agent set size:undefined disposed:false
+65 http fetch GET 200 https://registry.npmjs.org/google-logging-utils 471ms (cache miss)
+66 silly packumentCache full:https://registry.npmjs.org/google-logging-utils set size:undefined disposed:false
+67 http fetch GET 200 https://registry.npmjs.org/node-fetch 479ms (cache miss)
+68 silly packumentCache full:https://registry.npmjs.org/node-fetch set size:undefined disposed:false
+69 silly fetch manifest encoding@^0.1.0
+70 silly packumentCache full:https://registry.npmjs.org/encoding cache-miss
+71 http fetch GET 200 https://registry.npmjs.org/encoding 317ms (cache miss)
+72 silly packumentCache full:https://registry.npmjs.org/encoding set size:undefined disposed:false
+73 silly placeDep ROOT extend@3.0.2 OK for: gaxios@6.7.1 want: ^3.0.2
+74 silly placeDep ROOT https-proxy-agent@7.0.6 OK for: gaxios@6.7.1 want: ^7.0.1
+75 silly placeDep ROOT is-stream@2.0.1 OK for: gaxios@6.7.1 want: ^2.0.0
+76 silly placeDep ROOT node-fetch@2.7.0 OK for: gaxios@6.7.1 want: ^2.6.9
+77 silly placeDep ROOT uuid@9.0.1 OK for: gaxios@6.7.1 want: ^9.0.1
+78 silly fetch manifest debug@4
+79 silly packumentCache full:https://registry.npmjs.org/debug cache-miss
+80 silly fetch manifest agent-base@^7.1.2
+81 silly packumentCache full:https://registry.npmjs.org/agent-base cache-miss
+82 silly fetch manifest whatwg-url@^5.0.0
+83 silly packumentCache full:https://registry.npmjs.org/whatwg-url cache-miss
+84 http fetch GET 200 https://registry.npmjs.org/debug 133ms (cache miss)
+85 silly packumentCache full:https://registry.npmjs.org/debug set size:undefined disposed:false
+86 http fetch GET 200 https://registry.npmjs.org/whatwg-url 399ms (cache miss)
+87 silly packumentCache full:https://registry.npmjs.org/whatwg-url set size:undefined disposed:false
+88 http fetch GET 200 https://registry.npmjs.org/agent-base 403ms (cache miss)
+89 silly packumentCache full:https://registry.npmjs.org/agent-base set size:undefined disposed:false
+90 silly placeDep ROOT google-logging-utils@0.0.2 OK for: gcp-metadata@6.1.1 want: ^0.0.2
+91 silly placeDep ROOT json-bigint@1.0.0 OK for: gcp-metadata@6.1.1 want: ^1.0.0
+92 silly fetch manifest bignumber.js@^9.0.0
+93 silly packumentCache full:https://registry.npmjs.org/bignumber.js cache-miss
+94 http fetch GET 200 https://registry.npmjs.org/bignumber.js 342ms (cache miss)
+95 silly packumentCache full:https://registry.npmjs.org/bignumber.js set size:undefined disposed:false
+96 silly placeDep ROOT agent-base@7.1.4 OK for: https-proxy-agent@7.0.6 want: ^7.1.2
+97 silly placeDep node_modules/https-proxy-agent debug@4.4.3 OK for: https-proxy-agent@7.0.6 want: 4
+98 silly fetch manifest ms@^2.1.3
+99 silly packumentCache full:https://registry.npmjs.org/ms cache-miss
+100 http fetch GET 200 https://registry.npmjs.org/ms 72ms (cache miss)
+101 silly packumentCache full:https://registry.npmjs.org/ms set size:undefined disposed:false
+102 silly placeDep ROOT bignumber.js@9.3.1 OK for: json-bigint@1.0.0 want: ^9.0.0
+103 silly fetch manifest gcp-metadata@^5.2.0
+104 silly packumentCache full:https://registry.npmjs.org/gcp-metadata cache-miss
+105 http cache https://registry.npmjs.org/gcp-metadata 12ms (cache hit)
+106 silly packumentCache full:https://registry.npmjs.org/gcp-metadata set size:191448 disposed:false
+107 silly placeDep ROOT gcp-metadata@5.3.0 REPLACE for: mongodb@6.20.0 want: ^5.2.0
+108 silly fetch manifest gaxios@^5.0.0
+109 silly packumentCache full:https://registry.npmjs.org/gaxios cache-miss
+110 http cache https://registry.npmjs.org/gaxios 7ms (cache hit)
+111 silly packumentCache full:https://registry.npmjs.org/gaxios set size:345358 disposed:false
+112 silly placeDep node_modules/gcp-metadata gaxios@5.1.3 OK for: gcp-metadata@5.3.0 want: ^5.0.0
+113 silly fetch manifest https-proxy-agent@^5.0.0
+114 silly packumentCache full:https://registry.npmjs.org/https-proxy-agent cache-miss
+115 http cache https://registry.npmjs.org/https-proxy-agent 8ms (cache hit)
+116 silly packumentCache full:https://registry.npmjs.org/https-proxy-agent set size:81258 disposed:false
+117 silly placeDep node_modules/google-auth-library gcp-metadata@6.1.1 OK for: google-auth-library@9.15.1 want: ^6.1.0
+118 silly placeDep node_modules/node-fetch whatwg-url@5.0.0 OK for: node-fetch@2.7.0 want: ^5.0.0
+119 silly fetch manifest tr46@~0.0.3
+120 silly packumentCache full:https://registry.npmjs.org/tr46 cache-miss
+121 silly fetch manifest webidl-conversions@^3.0.0
+122 silly packumentCache full:https://registry.npmjs.org/webidl-conversions cache-miss
+123 http fetch GET 200 https://registry.npmjs.org/tr46 321ms (cache miss)
+124 silly packumentCache full:https://registry.npmjs.org/tr46 set size:undefined disposed:false
+125 http fetch GET 200 https://registry.npmjs.org/webidl-conversions 346ms (cache miss)
+126 silly packumentCache full:https://registry.npmjs.org/webidl-conversions set size:undefined disposed:false
+127 silly placeDep node_modules/gcp-metadata https-proxy-agent@5.0.1 OK for: gaxios@5.1.3 want: ^5.0.0
+128 silly fetch manifest agent-base@6
+129 silly packumentCache full:https://registry.npmjs.org/agent-base cache-miss
+130 http cache https://registry.npmjs.org/agent-base 6ms (cache hit)
+131 silly packumentCache full:https://registry.npmjs.org/agent-base set size:72085 disposed:false
+132 silly placeDep node_modules/gcp-metadata agent-base@6.0.2 OK for: https-proxy-agent@5.0.1 want: 6
+133 silly placeDep node_modules/gcp-metadata debug@4.4.3 OK for: https-proxy-agent@5.0.1 want: 4
+134 silly placeDep node_modules/gcp-metadata ms@2.1.3 OK for: debug@4.4.3 want: ^2.1.3
+135 silly placeDep ROOT google-logging-utils@0.0.2 OK for: gcp-metadata@6.1.1 want: ^0.0.2
+136 silly placeDep node_modules/https-proxy-agent ms@2.1.3 OK for: debug@4.4.3 want: ^2.1.3
+137 silly placeDep node_modules/node-fetch tr46@0.0.3 OK for: whatwg-url@5.0.0 want: ~0.0.3
+138 silly placeDep node_modules/node-fetch webidl-conversions@3.0.1 OK for: whatwg-url@5.0.0 want: ^3.0.0
+139 silly reify moves {}
+140 silly audit bulk request {
+140 silly audit   '@mongodb-js/saslprep': [ '1.4.6' ],
+140 silly audit   '@types/webidl-conversions': [ '7.0.3' ],
+140 silly audit   '@types/whatwg-url': [ '11.0.5' ],
+140 silly audit   accepts: [ '1.3.8' ],
+140 silly audit   'ansi-regex': [ '5.0.1' ],
+140 silly audit   'ansi-styles': [ '4.3.0' ],
+140 silly audit   'append-field': [ '1.0.0' ],
+140 silly audit   'array-flatten': [ '1.1.1' ],
+140 silly audit   axios: [ '0.21.4' ],
+140 silly audit   'basic-auth': [ '2.0.1' ],
+140 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+140 silly audit   bcryptjs: [ '2.4.3' ],
+140 silly audit   'body-parser': [ '1.20.4' ],
+140 silly audit   bson: [ '6.10.4' ],
+140 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+140 silly audit   'buffer-from': [ '1.1.2' ],
+140 silly audit   busboy: [ '1.6.0' ],
+140 silly audit   bytes: [ '3.1.2' ],
+140 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+140 silly audit   'call-bound': [ '1.0.4' ],
+140 silly audit   cliui: [ '7.0.4' ],
+140 silly audit   'color-convert': [ '2.0.1' ],
+140 silly audit   'color-name': [ '1.1.4' ],
+140 silly audit   'concat-stream': [ '1.6.2' ],
+140 silly audit   'content-disposition': [ '0.5.4' ],
+140 silly audit   'content-type': [ '1.0.5' ],
+140 silly audit   cookie: [ '0.7.2' ],
+140 silly audit   'cookie-signature': [ '1.0.7' ],
+140 silly audit   'core-util-is': [ '1.0.3' ],
+140 silly audit   cors: [ '2.8.6' ],
+140 silly audit   debug: [ '2.6.9', '4.3.2', '4.4.3' ],
+140 silly audit   depd: [ '2.0.0' ],
+140 silly audit   destroy: [ '1.2.0' ],
+140 silly audit   dotenv: [ '16.6.1' ],
+140 silly audit   'dunder-proto': [ '1.0.1' ],
+140 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+140 silly audit   'ee-first': [ '1.1.1' ],
+140 silly audit   'emoji-regex': [ '8.0.0' ],
+140 silly audit   encodeurl: [ '2.0.0' ],
+140 silly audit   'es-define-property': [ '1.0.1' ],
+140 silly audit   'es-errors': [ '1.3.0' ],
+140 silly audit   'es-object-atoms': [ '1.1.1' ],
+140 silly audit   escalade: [ '3.2.0' ],
+140 silly audit   'escape-html': [ '1.0.3' ],
+140 silly audit   etag: [ '1.8.1' ],
+140 silly audit   express: [ '4.22.1' ],
+140 silly audit   'express-validator': [ '7.3.1' ],
+140 silly audit   finalhandler: [ '1.3.2' ],
+140 silly audit   'follow-redirects': [ '1.15.11' ],
+140 silly audit   forwarded: [ '0.2.0' ],
+140 silly audit   fresh: [ '0.5.2' ],
+140 silly audit   'function-bind': [ '1.1.2' ],
+140 silly audit   'get-caller-file': [ '2.0.5' ],
+140 silly audit   'get-intrinsic': [ '1.3.0' ],
+140 silly audit   'get-proto': [ '1.0.1' ],
+140 silly audit   gopd: [ '1.2.0' ],
+140 silly audit   'has-symbols': [ '1.1.0' ],
+140 silly audit   hasown: [ '2.0.2' ],
+140 silly audit   helmet: [ '8.1.0' ],
+140 silly audit   'http-errors': [ '2.0.1' ],
+140 silly audit   'iconv-lite': [ '0.4.24' ],
+140 silly audit   inherits: [ '2.0.4' ],
+140 silly audit   'ipaddr.js': [ '1.9.1' ],
+140 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+140 silly audit   isarray: [ '1.0.0' ],
+140 silly audit   jsonwebtoken: [ '9.0.3' ],
+140 silly audit   ms: [ '2.1.3', '2.1.2', '2.0.0' ],
+140 silly audit   jwa: [ '2.0.1' ],
+140 silly audit   jws: [ '4.0.1' ],
+140 silly audit   kareem: [ '2.6.3' ],
+140 silly audit   localtunnel: [ '2.0.2' ],
+140 silly audit   lodash: [ '4.17.23' ],
+140 silly audit   'lodash.includes': [ '4.3.0' ],
+140 silly audit   'lodash.isboolean': [ '3.0.3' ],
+140 silly audit   'lodash.isinteger': [ '4.0.4' ],
+140 silly audit   'lodash.isnumber': [ '3.0.3' ],
+140 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+140 silly audit   'lodash.isstring': [ '4.0.1' ],
+140 silly audit   'lodash.once': [ '4.1.1' ],
+140 silly audit   'math-intrinsics': [ '1.1.0' ],
+140 silly audit   'media-typer': [ '0.3.0' ],
+140 silly audit   'memory-pager': [ '1.5.0' ],
+140 silly audit   'merge-descriptors': [ '1.0.3' ],
+140 silly audit   methods: [ '1.1.2' ],
+140 silly audit   mime: [ '1.6.0' ],
+140 silly audit   'mime-db': [ '1.52.0' ],
+140 silly audit   'mime-types': [ '2.1.35' ],
+140 silly audit   minimist: [ '1.2.8' ],
+140 silly audit   mkdirp: [ '0.5.6' ],
+140 silly audit   mongodb: [ '6.20.0' ],
+140 silly audit   'mongodb-connection-string-url': [ '3.0.2' ],
+140 silly audit   mongoose: [ '8.23.0' ],
+140 silly audit   morgan: [ '1.10.1' ],
+140 silly audit   'on-finished': [ '2.3.0', '2.4.1' ],
+140 silly audit   mpath: [ '0.9.0' ],
+140 silly audit   mquery: [ '5.0.0' ],
+140 silly audit   multer: [ '1.4.5-lts.2' ],
+140 silly audit   negotiator: [ '0.6.3' ],
+140 silly audit   'object-assign': [ '4.1.1' ],
+140 silly audit   'object-inspect': [ '1.13.4' ],
+140 silly audit   'on-headers': [ '1.1.0' ],
+140 silly audit   openurl: [ '1.1.1' ],
+140 silly audit   parseurl: [ '1.3.3' ],
+140 silly audit   'path-to-regexp': [ '0.1.12' ],
+140 silly audit   'process-nextick-args': [ '2.0.1' ],
+140 silly audit   'proxy-addr': [ '2.0.7' ],
+140 silly audit   punycode: [ '2.3.1' ],
+140 silly audit   qs: [ '6.14.2' ],
+140 silly audit   'range-parser': [ '1.2.1' ],
+140 silly audit   'raw-body': [ '2.5.3' ],
+140 silly audit   'readable-stream': [ '2.3.8' ],
+140 silly audit   'require-directory': [ '2.1.1' ],
+140 silly audit   'safer-buffer': [ '2.1.2' ],
+140 silly audit   semver: [ '7.7.4' ],
+140 silly audit   send: [ '0.19.2' ],
+140 silly audit   'serve-static': [ '1.16.3' ],
+140 silly audit   setprototypeof: [ '1.2.0' ],
+140 silly audit   'side-channel': [ '1.1.0' ],
+140 silly audit   'side-channel-list': [ '1.0.0' ],
+140 silly audit   'side-channel-map': [ '1.0.1' ],
+140 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+140 silly audit   sift: [ '17.1.3' ],
+140 silly audit   'sparse-bitfield': [ '3.0.3' ],
+140 silly audit   statuses: [ '2.0.2' ],
+140 silly audit   streamsearch: [ '1.1.0' ],
+140 silly audit   string_decoder: [ '1.1.1' ],
+140 silly audit   'string-width': [ '4.2.3' ],
+140 silly audit   'strip-ansi': [ '6.0.1' ],
+140 silly audit   toidentifier: [ '1.0.1' ],
+140 silly audit   tr46: [ '5.1.1', '0.0.3' ],
+140 silly audit   'type-is': [ '1.6.18' ],
+140 silly audit   typedarray: [ '0.0.6' ],
+140 silly audit   unpipe: [ '1.0.0' ],
+140 silly audit   'util-deprecate': [ '1.0.2' ],
+140 silly audit   'utils-merge': [ '1.0.1' ],
+140 silly audit   validator: [ '13.15.26' ],
+140 silly audit   vary: [ '1.1.2' ],
+140 silly audit   'webidl-conversions': [ '7.0.0', '3.0.1' ],
+140 silly audit   'whatwg-url': [ '14.2.0', '5.0.0' ],
+140 silly audit   'wrap-ansi': [ '7.0.0' ],
+140 silly audit   xtend: [ '4.0.2' ],
+140 silly audit   y18n: [ '5.0.8' ],
+140 silly audit   yargs: [ '17.1.1' ],
+140 silly audit   'yargs-parser': [ '20.2.9' ],
+140 silly audit   'google-auth-library': [ '9.15.1' ],
+140 silly audit   'base64-js': [ '1.5.1' ],
+140 silly audit   gaxios: [ '6.7.1' ],
+140 silly audit   gtoken: [ '7.1.0' ],
+140 silly audit   extend: [ '3.0.2' ],
+140 silly audit   'https-proxy-agent': [ '7.0.6' ],
+140 silly audit   'is-stream': [ '2.0.1' ],
+140 silly audit   'node-fetch': [ '2.7.0' ],
+140 silly audit   uuid: [ '9.0.1' ],
+140 silly audit   'json-bigint': [ '1.0.0' ],
+140 silly audit   'agent-base': [ '7.1.4' ],
+140 silly audit   'bignumber.js': [ '9.3.1' ],
+140 silly audit   'gcp-metadata': [ '6.1.1' ],
+140 silly audit   'google-logging-utils': [ '0.0.2' ]
+140 silly audit }
+141 http cache google-logging-utils@https://registry.npmjs.org/google-logging-utils/-/google-logging-utils-0.0.2.tgz 0ms (cache hit)
+142 http cache agent-base@https://registry.npmjs.org/agent-base/-/agent-base-7.1.4.tgz 0ms (cache hit)
+143 http cache bignumber.js@https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.3.1.tgz 0ms (cache hit)
+144 http cache json-bigint@https://registry.npmjs.org/json-bigint/-/json-bigint-1.0.0.tgz 0ms (cache hit)
+145 http cache https-proxy-agent@https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-7.0.6.tgz 0ms (cache hit)
+146 http cache uuid@https://registry.npmjs.org/uuid/-/uuid-9.0.1.tgz 0ms (cache hit)
+147 http cache is-stream@https://registry.npmjs.org/is-stream/-/is-stream-2.0.1.tgz 0ms (cache hit)
+148 http cache extend@https://registry.npmjs.org/extend/-/extend-3.0.2.tgz 0ms (cache hit)
+149 http cache gtoken@https://registry.npmjs.org/gtoken/-/gtoken-7.1.0.tgz 0ms (cache hit)
+150 http cache node-fetch@https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz 0ms (cache hit)
+151 http cache gaxios@https://registry.npmjs.org/gaxios/-/gaxios-6.7.1.tgz 0ms (cache hit)
+152 http cache ms@https://registry.npmjs.org/ms/-/ms-2.1.3.tgz 0ms (cache hit)
+153 http cache base64-js@https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz 0ms (cache hit)
+154 http cache google-auth-library@https://registry.npmjs.org/google-auth-library/-/google-auth-library-9.15.1.tgz 0ms (cache hit)
+155 http cache gcp-metadata@https://registry.npmjs.org/gcp-metadata/-/gcp-metadata-6.1.1.tgz 0ms (cache hit)
+156 http cache debug@https://registry.npmjs.org/debug/-/debug-4.4.3.tgz 0ms (cache hit)
+157 silly tarball no local data for google-logging-utils@https://registry.npmjs.org/google-logging-utils/-/google-logging-utils-0.0.2.tgz. Extracting by manifest.
+158 http cache tr46@https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz 0ms (cache hit)
+159 silly tarball no local data for agent-base@https://registry.npmjs.org/agent-base/-/agent-base-7.1.4.tgz. Extracting by manifest.
+160 http cache whatwg-url@https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz 0ms (cache hit)
+161 silly tarball no local data for bignumber.js@https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.3.1.tgz. Extracting by manifest.
+162 silly tarball no local data for json-bigint@https://registry.npmjs.org/json-bigint/-/json-bigint-1.0.0.tgz. Extracting by manifest.
+163 http cache webidl-conversions@https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz 0ms (cache hit)
+164 silly tarball no local data for https-proxy-agent@https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-7.0.6.tgz. Extracting by manifest.
+165 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-9.0.1.tgz. Extracting by manifest.
+166 silly tarball no local data for is-stream@https://registry.npmjs.org/is-stream/-/is-stream-2.0.1.tgz. Extracting by manifest.
+167 silly tarball no local data for extend@https://registry.npmjs.org/extend/-/extend-3.0.2.tgz. Extracting by manifest.
+168 silly tarball no local data for gtoken@https://registry.npmjs.org/gtoken/-/gtoken-7.1.0.tgz. Extracting by manifest.
+169 silly tarball no local data for node-fetch@https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz. Extracting by manifest.
+170 silly tarball no local data for gaxios@https://registry.npmjs.org/gaxios/-/gaxios-6.7.1.tgz. Extracting by manifest.
+171 silly tarball no local data for ms@https://registry.npmjs.org/ms/-/ms-2.1.3.tgz. Extracting by manifest.
+172 silly tarball no local data for base64-js@https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz. Extracting by manifest.
+173 silly tarball no local data for google-auth-library@https://registry.npmjs.org/google-auth-library/-/google-auth-library-9.15.1.tgz. Extracting by manifest.
+174 silly tarball no local data for gcp-metadata@https://registry.npmjs.org/gcp-metadata/-/gcp-metadata-6.1.1.tgz. Extracting by manifest.
+175 silly tarball no local data for debug@https://registry.npmjs.org/debug/-/debug-4.4.3.tgz. Extracting by manifest.
+176 silly tarball no local data for tr46@https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz. Extracting by manifest.
+177 silly tarball no local data for whatwg-url@https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz. Extracting by manifest.
+178 silly tarball no local data for webidl-conversions@https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz. Extracting by manifest.
+179 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 367ms
+180 silly audit report {
+180 silly audit report   axios: [
+180 silly audit report     {
+180 silly audit report       id: 1111034,
+180 silly audit report       url: 'https://github.com/advisories/GHSA-jr5f-v2jv-69x6',
+180 silly audit report       title: 'axios Requests Vulnerable To Possible SSRF and Credential Leakage via Absolute URL',
+180 silly audit report       severity: 'high',
+180 silly audit report       vulnerable_versions: '<0.30.0',
+180 silly audit report       cwe: [Array],
+180 silly audit report       cvss: [Object]
+180 silly audit report     },
+180 silly audit report     {
+180 silly audit report       id: 1113274,
+180 silly audit report       url: 'https://github.com/advisories/GHSA-43fc-jf86-j433',
+180 silly audit report       title: 'Axios is Vulnerable to Denial of Service via __proto__ Key in mergeConfig',
+180 silly audit report       severity: 'high',
+180 silly audit report       vulnerable_versions: '<=0.30.2',
+180 silly audit report       cwe: [Array],
+180 silly audit report       cvss: [Object]
+180 silly audit report     },
+180 silly audit report     {
+180 silly audit report       id: 1116672,
+180 silly audit report       url: 'https://github.com/advisories/GHSA-3p68-rc4w-qgx5',
+180 silly audit report       title: 'Axios has a NO_PROXY Hostname Normalization Bypass that Leads to SSRF',
+180 silly audit report       severity: 'moderate',
+180 silly audit report       vulnerable_versions: '<0.31.0',
+180 silly audit report       cwe: [Array],
+180 silly audit report       cvss: [Object]
+180 silly audit report     },
+180 silly audit report     {
+180 silly audit report       id: 1116674,
+180 silly audit report       url: 'https://github.com/advisories/GHSA-fvcv-3m26-pcqx',
+180 silly audit report       title: 'Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain',
+180 silly audit report       severity: 'moderate',
+180 silly audit report       vulnerable_versions: '<0.31.0',
+180 silly audit report       cwe: [Array],
+180 silly audit report       cvss: [Object]
+180 silly audit report     },
+180 silly audit report     {
+180 silly audit report       id: 1097679,
+180 silly audit report       url: 'https://github.com/advisories/GHSA-wf5p-g6vw-rhxx',
+180 silly audit report       title: 'Axios Cross-Site Request Forgery Vulnerability',
+180 silly audit report       severity: 'moderate',
+180 silly audit report       vulnerable_versions: '>=0.8.1 <0.28.0',
+180 silly audit report       cwe: [Array],
+180 silly audit report       cvss: [Object]
+180 silly audit report     }
+180 silly audit report   ],
+180 silly audit report   'follow-redirects': [
+180 silly audit report     {
+180 silly audit report       id: 1116560,
+180 silly audit report       url: 'https://github.com/advisories/GHSA-r4q5-vmmm-2653',
+180 silly audit report       title: 'follow-redirects leaks Custom Authentication Headers to Cross-Domain Redirect Targets',
+180 silly audit report       severity: 'moderate',
+180 silly audit report       vulnerable_versions: '<=1.15.11',
+180 silly audit report       cwe: [Array],
+180 silly audit report       cvss: [Object]
+180 silly audit report     }
+180 silly audit report   ],
+180 silly audit report   lodash: [
+180 silly audit report     {
+180 silly audit report       id: 1115806,
+180 silly audit report       url: 'https://github.com/advisories/GHSA-r5fr-rjxr-66jc',
+180 silly audit report       title: 'lodash vulnerable to Code Injection via `_.template` imports key names',
+180 silly audit report       severity: 'high',
+180 silly audit report       vulnerable_versions: '>=4.0.0 <=4.17.23',
+180 silly audit report       cwe: [Array],
+180 silly audit report       cvss: [Object]
+180 silly audit report     },
+180 silly audit report     {
+180 silly audit report       id: 1115810,
+180 silly audit report       url: 'https://github.com/advisories/GHSA-f23m-r3pf-42rh',
+180 silly audit report       title: 'lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`',
+180 silly audit report       severity: 'moderate',
+180 silly audit report       vulnerable_versions: '<=4.17.23',
+180 silly audit report       cwe: [Array],
+180 silly audit report       cvss: [Object]
+180 silly audit report     }
+180 silly audit report   ],
+180 silly audit report   'path-to-regexp': [
+180 silly audit report     {
+180 silly audit report       id: 1115527,
+180 silly audit report       url: 'https://github.com/advisories/GHSA-37ch-88jc-xwx2',
+180 silly audit report       title: 'path-to-regexp vulnerable to Regular Expression Denial of Service via multiple route parameters',
+180 silly audit report       severity: 'high',
+180 silly audit report       vulnerable_versions: '<0.1.13',
+180 silly audit report       cwe: [Array],
+180 silly audit report       cvss: [Object]
+180 silly audit report     }
+180 silly audit report   ]
+180 silly audit report }
+181 silly packumentCache corgi:https://registry.npmjs.org/axios cache-miss
+182 silly packumentCache corgi:https://registry.npmjs.org/follow-redirects cache-miss
+183 silly packumentCache corgi:https://registry.npmjs.org/lodash cache-miss
+184 silly packumentCache corgi:https://registry.npmjs.org/path-to-regexp cache-miss
+185 http fetch GET 200 https://registry.npmjs.org/json-bigint/-/json-bigint-1.0.0.tgz 244ms (cache miss)
+186 http fetch GET 200 https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz 252ms (cache miss)
+187 http fetch GET 200 https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz 288ms (cache miss)
+188 http fetch GET 200 https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz 309ms (cache miss)
+189 http fetch GET 200 https://registry.npmjs.org/agent-base/-/agent-base-7.1.4.tgz 342ms (cache miss)
+190 http fetch GET 200 https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-7.0.6.tgz 339ms (cache miss)
+191 http fetch GET 200 https://registry.npmjs.org/gtoken/-/gtoken-7.1.0.tgz 378ms (cache miss)
+192 http fetch GET 200 https://registry.npmjs.org/debug/-/debug-4.4.3.tgz 381ms (cache miss)
+193 http fetch GET 200 https://registry.npmjs.org/follow-redirects 181ms (cache miss)
+194 silly packumentCache corgi:https://registry.npmjs.org/follow-redirects set size:undefined disposed:false
+195 http fetch GET 200 https://registry.npmjs.org/is-stream/-/is-stream-2.0.1.tgz 411ms (cache miss)
+196 http fetch GET 200 https://registry.npmjs.org/path-to-regexp 188ms (cache miss)
+197 silly packumentCache corgi:https://registry.npmjs.org/path-to-regexp set size:undefined disposed:false
+198 http fetch GET 200 https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.3.1.tgz 420ms (cache miss)
+199 http fetch GET 200 https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz 416ms (cache miss)
+200 http fetch GET 200 https://registry.npmjs.org/axios 212ms (cache miss)
+201 silly packumentCache corgi:https://registry.npmjs.org/axios set size:undefined disposed:false
+202 http fetch GET 200 https://registry.npmjs.org/extend/-/extend-3.0.2.tgz 451ms (cache miss)
+203 http fetch GET 200 https://registry.npmjs.org/gcp-metadata/-/gcp-metadata-6.1.1.tgz 448ms (cache miss)
+204 http fetch GET 200 https://registry.npmjs.org/google-logging-utils/-/google-logging-utils-0.0.2.tgz 464ms (cache miss)
+205 http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.1.3.tgz 471ms (cache miss)
+206 http fetch GET 200 https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz 475ms (cache miss)
+207 http fetch GET 200 https://registry.npmjs.org/gaxios/-/gaxios-6.7.1.tgz 533ms (cache miss)
+208 http fetch GET 200 https://registry.npmjs.org/lodash 323ms (cache miss)
+209 silly packumentCache corgi:https://registry.npmjs.org/lodash set size:undefined disposed:false
+210 silly packumentCache corgi:https://registry.npmjs.org/localtunnel cache-miss
+211 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-9.0.1.tgz 654ms (cache miss)
+212 http fetch GET 200 https://registry.npmjs.org/google-auth-library/-/google-auth-library-9.15.1.tgz 777ms (cache miss)
+213 http fetch GET 200 https://registry.npmjs.org/localtunnel 466ms (cache miss)
+214 silly packumentCache corgi:https://registry.npmjs.org/localtunnel set size:undefined disposed:false
+215 silly packumentCache corgi:https://registry.npmjs.org/express-validator cache-miss
+216 http fetch GET 200 https://registry.npmjs.org/express-validator 866ms (cache miss)
+217 silly packumentCache corgi:https://registry.npmjs.org/express-validator set size:undefined disposed:false
+218 silly packumentCache corgi:https://registry.npmjs.org/express cache-miss
+219 http fetch GET 200 https://registry.npmjs.org/express 101ms (cache miss)
+220 silly packumentCache corgi:https://registry.npmjs.org/express set size:undefined disposed:false
+221 silly ADD node_modules/google-logging-utils
+222 silly ADD node_modules/bignumber.js
+223 silly ADD node_modules/agent-base
+224 silly ADD node_modules/json-bigint
+225 silly ADD node_modules/uuid
+226 silly ADD node_modules/node-fetch
+227 silly ADD node_modules/node-fetch/node_modules/webidl-conversions
+228 silly ADD node_modules/node-fetch/node_modules/tr46
+229 silly ADD node_modules/node-fetch/node_modules/whatwg-url
+230 silly ADD node_modules/is-stream
+231 silly ADD node_modules/https-proxy-agent
+232 silly ADD node_modules/https-proxy-agent/node_modules/ms
+233 silly ADD node_modules/https-proxy-agent/node_modules/debug
+234 silly ADD node_modules/extend
+235 silly ADD node_modules/gtoken
+236 silly ADD node_modules/gaxios
+237 silly ADD node_modules/base64-js
+238 silly ADD node_modules/google-auth-library
+239 silly ADD node_modules/google-auth-library/node_modules/gcp-metadata
+240 verbose cwd D:\salon-mobile-application\backend
+241 verbose os Windows_NT 10.0.26200
+242 verbose node v24.14.0
+243 verbose npm  v11.12.1
+244 verbose exit 0
+245 info ok
