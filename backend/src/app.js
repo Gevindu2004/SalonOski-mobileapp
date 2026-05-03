@@ -30,6 +30,10 @@ app.use(express.urlencoded({ extended: true }));
 // Exposes uploaded files as public URLs
 app.use("/uploads", express.static(path.join(__dirname, "..", "uploads")));
 
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "Salon Oski Backend is running!" });
+});
+
 app.get("/health", (req, res) => {
   res.status(200).json({ status: "ok", timestamp: new Date().toISOString() });
 });
