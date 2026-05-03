@@ -1,4 +1,18 @@
 node_modules/
+<<<<<<< HEAD
+.env
+.env.*
+.env.example
+.npm-cache/
+uploads/
+tunnel.log
+tunnel.err.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+.env.example
+=======
 .expo/
 dist/
 npm-debug.log*
@@ -9,3 +23,4 @@ yarn-error.log*
 !.env.example
 .npm-cache/
 .DS_Store
+>>>>>>> e9010e7a6d112018bb39bc8bed46645106275672
