@@ -184,9 +184,16 @@ export default function ProfileScreen() {
         <InputField
           label="Phone"
           value={form.phone}
-          onChangeText={(value) => setForm((prev) => ({ ...prev, phone: value }))}
+          onChangeText={(value) => {
+            const numericValue = value.replace(/[^0-9]/g, "");
+            if (numericValue.length <= 10) {
+              setForm((prev) => ({ ...prev, phone: numericValue }));
+            }
+          }}
           placeholder="07xxxxxxxx"
           editable={isEditing}
+          keyboardType="numeric"
+          maxLength={10}
         />
         <Text style={styles.item}>Role: {user?.role}</Text>
       </View>

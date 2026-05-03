@@ -176,8 +176,16 @@ export default function RegisterScreen({ navigation }) {
       <InputField
         label="Phone"
         value={form.phone}
-        onChangeText={(value) => setForm((prev) => ({ ...prev, phone: value }))}
-        placeholder="Phone number"
+        onChangeText={(value) => {
+          // Only allow digits and limit to 10 characters
+          const numericValue = value.replace(/[^0-9]/g, "");
+          if (numericValue.length <= 10) {
+            setForm((prev) => ({ ...prev, phone: numericValue }));
+          }
+        }}
+        placeholder="Phone number (e.g. 0712345678)"
+        keyboardType="numeric"
+        maxLength={10}
       />
 
       <SocialAuthButtons preferredName={form.name} preferredTitle={form.title} preferredPhone={form.phone} />
