@@ -28,7 +28,7 @@ const normalizeAudience = (value) => {
   const audience = String(value || "").trim().toLowerCase();
   return PRODUCT_AUDIENCES.includes(audience) ? audience : "customer";
 };
-
+ 
 const resolveProductAudience = (product) => {
   const audience = String(product?.audience || "").trim().toLowerCase();
   return audience === "staff" ? "staff" : "customer";
