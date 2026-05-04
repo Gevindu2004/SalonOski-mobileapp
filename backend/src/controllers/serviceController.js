@@ -4,7 +4,7 @@ const getImageUrl = (req, file) => {
   if (!file) return "";
   return `${req.protocol}://${req.get("host")}/uploads/${file.filename}`;
 };
-
+  
 const createService = async (req, res, next) => {
   try {
     const imageUrl = getImageUrl(req, req.file);
