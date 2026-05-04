@@ -20,7 +20,7 @@ router.post(
   protect,
   authorize("admin"),
   upload.single("image"),
-  createServiceValidation,
+  createServiceValidation, 
   validateRequest,
   createService
 );
