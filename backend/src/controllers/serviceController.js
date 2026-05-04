@@ -1,5 +1,5 @@
 const Service = require("../models/Service");
-
+    
 const getImageUrl = (req, file) => {
   if (!file) return "";
   return `${req.protocol}://${req.get("host")}/uploads/${file.filename}`;
