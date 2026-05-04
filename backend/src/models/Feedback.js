@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const feedbackReplySchema = new mongoose.Schema(
-  {
+  { 
     byUserId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
