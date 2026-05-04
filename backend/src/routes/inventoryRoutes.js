@@ -7,7 +7,7 @@ const {
   trackProductUsage,
   createOrder,
   getMyOrders,
-  getAllOrders,
+  getAllOrders, 
   markOrderStatus,
   getInventoryReport,
   getOrderReceipt 
