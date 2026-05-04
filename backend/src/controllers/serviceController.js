@@ -15,7 +15,7 @@ const createService = async (req, res, next) => {
     return res.status(201).json({ message: "Service created", data: service });
   } catch (error) {
     return next(error);
-  }
+  }    
 };
 
 const getServices = async (req, res, next) => {
