@@ -2,6 +2,7 @@ const Feedback = require("../models/Feedback");
 const Appointment = require("../models/Appointment");
 const Staff = require("../models/Staff");
 
+
 const createFeedback = async (req, res, next) => {
   try {
     const { appointmentId, rating, comment } = req.body;
@@ -23,7 +24,7 @@ const createFeedback = async (req, res, next) => {
       customerId: req.user._id,
       staffId: appointment.staffId,
       rating,
-      comment
+      comment   
     });
 
     const populated = await feedback.populate([
@@ -49,7 +50,7 @@ const getFeedbacks = async (req, res, next) => {
         return res.status(200).json({ data: [] });
       }
       filter = { staffId: staff._id };
-    }
+    }   
 
     const feedbacks = await Feedback.find(filter)
       .populate({ path: "appointmentId", populate: [{ path: "serviceId" }, { path: "staffId" }] })

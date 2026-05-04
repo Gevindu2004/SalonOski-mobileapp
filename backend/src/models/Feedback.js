@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const feedbackReplySchema = new mongoose.Schema(
-  {
+  { 
     byUserId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
@@ -19,7 +19,7 @@ const feedbackReplySchema = new mongoose.Schema(
     }
   },
   { timestamps: true }
-);
+);   
 
 const feedbackSchema = new mongoose.Schema(
   {
@@ -48,12 +48,12 @@ const feedbackSchema = new mongoose.Schema(
       type: String,
       required: true,
       trim: true
-    },
+    }, 
     replies: [feedbackReplySchema]
   },
   { timestamps: true }
 );
 
-feedbackSchema.index({ appointmentId: 1, customerId: 1 }, { unique: true });
+feedbackSchema.index({ appointmentId: 1, customerId: 1 }, { unique: true });  
 
 module.exports = mongoose.model("Feedback", feedbackSchema);
