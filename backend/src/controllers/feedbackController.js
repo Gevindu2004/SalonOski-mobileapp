@@ -24,7 +24,7 @@ const createFeedback = async (req, res, next) => {
       customerId: req.user._id,
       staffId: appointment.staffId,
       rating,
-      comment
+      comment   
     });
 
     const populated = await feedback.populate([
