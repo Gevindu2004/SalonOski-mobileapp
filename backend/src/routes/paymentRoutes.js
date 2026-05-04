@@ -16,7 +16,7 @@ const { createPaymentValidation, updatePaymentStatusValidation } = require("../v
 const router = express.Router();
 
 router.use(protect);
-
+ 
 router.post("/", createPaymentValidation, validateRequest, createPayment);
 router.get("/", getPayments);
 router.get("/summary", getRevenueSummary);
