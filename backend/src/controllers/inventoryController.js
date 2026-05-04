@@ -4,7 +4,7 @@ const { buildSimpleReceiptPdf } = require("../utils/pdfReceipt");
 
 const PAYMENT_METHODS = ["cash", "card", "online"];
 const ORDER_STATUSES = ["unpaid", "paid", "refunded"];
-const PRODUCT_AUDIENCES = ["customer", "staff"];
+const PRODUCT_AUDIENCES = ["customer", "staff"]; 
 
 const pad2 = (value) => String(value).padStart(2, "0");
 const generateRef = (prefix) => {
