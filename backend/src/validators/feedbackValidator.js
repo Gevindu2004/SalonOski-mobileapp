@@ -15,6 +15,7 @@ const replyByAppointmentValidation = [
   body("message").trim().notEmpty().withMessage("Reply message is required")
 ];
 
+
 module.exports = {
   createFeedbackValidation,
   replyFeedbackValidation,
