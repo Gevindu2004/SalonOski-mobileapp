@@ -15,7 +15,7 @@ const inventoryRoutes = require("./routes/inventoryRoutes");
 const { notFoundHandler, errorHandler } = require("./middleware/errorMiddleware");
 
 dotenv.config();
-
+     
 const app = express();
 
 app.use(helmet());
