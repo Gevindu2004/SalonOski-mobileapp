@@ -6,7 +6,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import { useFonts } from "expo-font";
 import {
   PlayfairDisplay_700Bold
-} from "@expo-google-fonts/playfair-display";
+} from "@expo-google-fonts/playfair-display"; 
 import {
   Poppins_400Regular,
   Poppins_500Medium,
