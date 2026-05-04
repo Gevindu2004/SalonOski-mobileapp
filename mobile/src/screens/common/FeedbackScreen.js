@@ -10,7 +10,7 @@ import { useTheme } from "../../context/ThemeContext";
 import { useAuth } from "../../context/AuthContext";
 import api from "../../services/api";
 
-
+ 
 const RATING_OPTIONS = ["1", "2", "3", "4", "5"];
 function PickerModal({ visible, title, options, onSelect, onClose, styles }) {
   return (
