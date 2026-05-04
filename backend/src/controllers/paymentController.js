@@ -15,7 +15,7 @@ const toCanonicalStatus = (status) => {
   if (value === "failed") return "unpaid";
   if (PAYMENT_STATUSES.includes(value)) return value;
   return "unpaid";
-};
+};  
 
 const pad2 = (value) => String(value).padStart(2, "0");
 
