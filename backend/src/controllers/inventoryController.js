@@ -10,7 +10,7 @@ const pad2 = (value) => String(value).padStart(2, "0");
 const generateRef = (prefix) => {
   const now = new Date();
   const stamp = `${now.getFullYear()}${pad2(now.getMonth() + 1)}${pad2(now.getDate())}`;
-  const random = Math.random().toString(36).slice(2, 8).toUpperCase();
+  const random = Math.random().toString(36).slice(2, 8).toUpperCase(); 
   return `${prefix}-${stamp}-${random}`;
 };
 
