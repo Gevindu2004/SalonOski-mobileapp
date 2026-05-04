@@ -50,7 +50,7 @@ const getFeedbacks = async (req, res, next) => {
         return res.status(200).json({ data: [] });
       }
       filter = { staffId: staff._id };
-    }
+    }   
 
     const feedbacks = await Feedback.find(filter)
       .populate({ path: "appointmentId", populate: [{ path: "serviceId" }, { path: "staffId" }] })
