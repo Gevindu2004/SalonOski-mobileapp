@@ -48,7 +48,7 @@ const feedbackSchema = new mongoose.Schema(
       type: String,
       required: true,
       trim: true
-    },
+    }, 
     replies: [feedbackReplySchema]
   },
   { timestamps: true }
