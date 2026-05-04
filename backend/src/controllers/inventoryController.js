@@ -13,7 +13,7 @@ const generateRef = (prefix) => {
   const random = Math.random().toString(36).slice(2, 8).toUpperCase(); 
   return `${prefix}-${stamp}-${random}`;
 };
-
+ 
 const normalizeMethod = (value) => {
   const method = String(value || "").trim().toLowerCase();
   return PAYMENT_METHODS.includes(method) ? method : "online";
