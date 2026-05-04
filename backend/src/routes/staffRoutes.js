@@ -1,7 +1,7 @@
 const express = require("express");
 const {
   createStaff,
-  getStaff,
+  getStaff, 
   getStaffById,
   updateStaff,
   deleteStaff
