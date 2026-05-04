@@ -148,7 +148,7 @@ const getAppointmentById = async (req, res, next) => {
     return next(error);
   }
 };
-
+//validations
 const updateAppointment = async (req, res, next) => {
   try {
     const appointment = await resolveAppointmentByRef(req.params.id, req.user);
@@ -171,6 +171,7 @@ const updateAppointment = async (req, res, next) => {
       if (req.body.status && !["approved", "rejected"].includes(req.body.status)) {
         return res.status(403).json({ message: "Beauticians can only approve or reject appointments" });
       }
+      //date validationns
       const allowed = { status: req.body.status };
       Object.assign(appointment, allowed);
     } else if (req.user.role !== "admin") {
@@ -192,6 +193,13 @@ const updateAppointment = async (req, res, next) => {
     if (dateChanged || timeChanged) {
       appointment.reminderEmailSentAt = null;
     }
+    if (appointment.status === "cancelled") {
+      const populated = await appointment.populate(["userId", "serviceId", "staffId"]);
+      sendStatusChangedEmail(populated).catch(() => {});
+      await Appointment.findByIdAndDelete(appointment._id);
+      return res.status(200).json({ message: "Appointment cancelled and removed from database" });
+    }
+
     const updated = await appointment.save();
     const populated = await updated.populate(["userId", "serviceId", "staffId"]);
     if (previousStatus !== String(populated.status || "")) {
