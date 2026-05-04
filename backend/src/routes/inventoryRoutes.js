@@ -10,7 +10,7 @@ const {
   getAllOrders,
   markOrderStatus,
   getInventoryReport,
-  getOrderReceipt
+  getOrderReceipt 
 } = require("../controllers/inventoryController");
 const { protect, authorize } = require("../middleware/authMiddleware");
 const upload = require("../middleware/uploadMiddleware");
