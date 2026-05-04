@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 const { getNextStaffCode } = require("../utils/staffCode");
 
 const normalizeSlots = (value) =>
-  Array.isArray(value) ? value.map((slot) => String(slot || "").trim()).filter(Boolean) : [];
+  Array.isArray(value) ? value.map((slot) => String(slot || "").trim()).filter(Boolean) : [];   
 
 const createStaff = async (req, res, next) => {
   try {
