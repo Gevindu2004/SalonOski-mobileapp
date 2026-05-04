@@ -272,7 +272,7 @@ const createStyles = (colors) =>
       fontFamily: FONTS.bodyMedium,
       fontSize: TYPOGRAPHY.sm,
       marginTop: 2
-    },
+    }, 
     todayBookingEmpty: {
       color: colors.muted,
       fontFamily: FONTS.bodyMedium,
